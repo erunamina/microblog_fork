@@ -42,3 +42,4 @@ microblog.log*
 #PyCharm, etc.
 **.DS_Store
 idea/
+venv
