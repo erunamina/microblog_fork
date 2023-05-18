@@ -7,6 +7,7 @@ Clone/fork this repository and make a commit with this change. After you've made
 
 <BR><BR>
 
+And here's the screenshot of the updated homepage.
 ![](screenshot.png)
 
 <BR><BR>
