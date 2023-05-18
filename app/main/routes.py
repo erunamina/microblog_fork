@@ -11,14 +11,19 @@ from app.models import User, Post, Message, Notification
 from app.translate import translate
 from app.main import bp
 
+
 @bp.route('/', methods=['GET', 'POST'])
 @bp.route('/index', methods=['GET', 'POST'])
 def index():
-    posts = [Post(body='my first post!', user_id=1, language='EN'),
-             Post(body='my second post!', user_id=2, language='EN'),
-             Post(body='my third post!', user_id=3, language='EN'),
-             Post(body='my fourth post!', user_id=1, language='EN'),
-             Post(body='my fifth post!', user_id=2, language='EN')]
+    # posts = [Post(body='my first post!', user_id=1, language='EN'),
+    #          Post(body='my second post!', user_id=2, language='EN'),
+    #          Post(body='my third post!', user_id=3, language='EN'),
+    #          Post(body='my fourth post!', user_id=1, language='EN'),
+    #          Post(body='my fifth post!', user_id=2, language='EN')]
+
+    # Make descending to match newer/older buttons on page, currently display all rather than paginated
+    posts = Post.query.order_by(Post.timestamp.desc())
+
     return render_template('index.html', title=_('Home'), posts=posts)
 
 

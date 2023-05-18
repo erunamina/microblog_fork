@@ -4,12 +4,22 @@
     <h1>You're doing it!</h1>
     <br>
     <table class="table table-hover">
-        <tr>
-            <td>
-                <br>
-                <span id="post1">This is my one and only blog post. Can you add more using a for loop?</span>
-            </td>
-        </tr>
+        <th>User ID</th>
+        <th>Language</th>
+        <th>Body</th>
+        {%for post in posts%}
+            <tr>
+                <td>
+                    {{post.user_id}}
+                </td>
+                <td>
+                    {{post.language}}
+                </td>
+                <td>
+                    {{post.body}}
+                </td>
+            </tr>
+        {%endfor%}
     </table>
     <nav aria-label="...">
         <ul class="pager">
