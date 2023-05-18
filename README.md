@@ -7,6 +7,10 @@ Clone/fork this repository and make a commit with this change. After you've made
 
 <BR><BR>
 
+![](screenshot.png)
+
+<BR><BR>
+
 ## Contributions
 Feel free to clone this repo locally and use your own editor of choice.
 
@@ -14,4 +18,3 @@ If you would rather use the Gitpod development environment for this app:
 
 - Change the dropdown that says "Web IDE" to "Gitpod" (if it already says "Gitpod" skip this step)
 - Click the button that says "Gitpod"
-![](screenshot.png)
